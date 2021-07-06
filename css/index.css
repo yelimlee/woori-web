@@ -1,3 +1,4 @@
+/* 메뉴 */
 header .top {
   margin: 0 auto;
   width: 1200px;
@@ -122,4 +123,201 @@ header .btm .spot button {
   background: none;
   font-size: 25px;
   color: #0066b3;
+}
+
+/* 콘텐츠 공통디자인 */
+/* block : 금융서비스 공통부분 */
+.block > div {
+  margin: 0 auto;
+  padding: 100px 0 0;
+  width: 1200px;
+}
+.block .tit {
+  text-align: center;
+}
+.block .tit h2 {
+  padding: 0 0 28px;
+  font-size: 38px;
+  color: #333;
+  /* 줄간격 초기화 */
+  line-height: 1;
+}
+.block .tit p {
+  font-size: 21px;
+  color: #666;
+  line-height: 1;
+  padding: 0 0 40px;
+}
+/* 금융 서비스 */
+.service .banner > div {
+  width: 580px;
+  color: #fff;
+}
+.service .banner .left {
+  float: left;
+  background: url(../images/add1.jpg) no-repeat left top;
+}
+.service .banner .left div {
+  float: right;
+  background: linear-gradient(to right, #3194d5, #4fb2f6);
+}
+.service .banner .right {
+  float: right;
+  background: url(../images/add2.jpg) no-repeat right top;
+}
+.service .banner .right div {
+  background: linear-gradient(to right, #334da4, #3c62b3);
+}
+.service .banner div div {
+  padding: 37px 0 0;
+  width: 290px;
+  height: 280px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.service .banner h3 {
+  font-size: 24px;
+  line-height: 31px;
+}
+.service .banner p {
+  padding: 12px 0 15px;
+  font-size: 13px;
+  line-height: 24px;
+}
+.service .banner a {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  /* 모서리부분을 정사각혁을로 그렸을때의 px길이 */
+  border-radius: 7px;
+  line-height: 40px;
+  color: #fff;
+  background: #064ca2;
+  font-size: 13px;
+}
+.service .btm article {
+  position: relative;
+  margin: 38px 0 0;
+  width: 580px;
+}
+.service .btm h3 {
+  padding: 0 0 28px;
+  font-size: 26px;
+  color: #333;
+}
+.service .event {
+  float: left;
+}
+.service .recom {
+  float: right;
+}
+.service .event img {
+  width: 100%;
+}
+.service .card_info > div {
+  float: left;
+}
+.service .card_info .card {
+  position: relative;
+  font-size: 0;
+}
+.service .card_info .card div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+.service .card_info .card div:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background: #bfc0c2;
+}
+.service .card_info .card button {
+  width: 50%;
+  height: 45px;
+  background: none;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;
+}
+.service .card_info .card button:before {
+  display: inline-block;
+  transform: translate(-4px, 2px);
+}
+.service .card_info .card button:first-child:before {
+  content: url(../images/heart.png);
+}
+.service .card_info .card button:last-child:before {
+  content: url(../images/apply.png);
+}
+.service .card_info .info {
+  padding: 0 0 0 35px;
+  width: 295px;
+}
+.service .card_info .info h4 {
+  font-size: 26px;
+  color: #333;
+  line-height: 1;
+}
+.service .card_info .info p {
+  position: relative;
+  padding: 36px 0 0;
+  font-size: 18px;
+  color: #666;
+  letter-spacing: -0.5px;
+}
+.service .card_info .info p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 21px;
+  width: 36px;
+  height: 2px;
+  background: #288bcc;
+}
+.service .slide2 {
+  border-top: 2px solid #333;
+  padding: 20px 0 0;
+  height: 224px;
+  box-sizing: border-box;
+}
+.service .slide2 .control {
+  position: absolute;
+  left: 256px;
+  bottom: 0;
+  z-index: 100;
+}
+.service .slide2 .control button {
+  width: 75px;
+  height: 35px;
+  cursor: pointer;
+}
+.service .slide2 .control button ~ button {
+  border-left: 1px solid #ddd;
+}
+.service .slide2 .control button.prev {
+  background: url(../images/sArrow_prev.png) no-repeat center;
+}
+.service .slide2 .control button.next {
+  background: url(../images/sArrow_next.png) no-repeat center;
+}
+.btn_more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 136px;
+  line-height: 38px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #cdcdcd;
+  text-align: center;
+}
+.btn_more:after {
+  content: url(../images/next.png);
+  margin: 0 0 0 8px;
 }

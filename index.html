@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="css/default.css">
     <!-- 첫 페이지 전용 css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- 자바스크립트  -->
+    <script src="js/default.js"></script>
+    <!-- 슬라이드 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- body다음엔 반드시 skip네이게이션이 있어야 함 -->
@@ -60,5 +65,82 @@
         </div>
     </div>
     </header>  
+    <main>
+        <section>
+            <div class="swiper-container slide1">
+                <div class="swiper-wrapper">
+                    <div class="sqiper-slider"><img src="images/visual1.jpg" alt=""></div>
+                    <div class="sqiper-slider"><img src="images/visual1.jpg" alt=""></div>
+                    <div class="sqiper-slider"><img src="images/visual1.jpg" alt=""></div>
+                </div>
+                <div class="control">
+                    <div class="slide_btn_prev"></div>
+                    <div class="paging1"></div>
+                    <div class="slide_btn_next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="block service">
+            <div>
+                <div class="tit">
+                    <h2>금융서비스</h2>
+                    <p>은퇴 준비가 걱정되시나요? 지금 바로 은퇴설계시스템을 통해 은퇴준비 상태를 점검하세요!</p>
+                </div>
+                <div class="banner clear">
+                    <div class="left">
+                        <div>
+                            <h3>고객맞춤<br>은퇴설계</h3>
+                            <p>현재 은퇴준비 상태 점검 <br>미래 필요자금 계산<br>포트폴리오제안</p>
+                            <a href="">바로가기</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <h3>시니어플러스<br>우리통장</h3>
+                            <p>우대금리, 수수료면제 <br>무료보이스피싱보험, 온천무료이용권, <br>헬스케어 서비스등</p>
+                            <a href="">바로가기</a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="btm">
+                    <article class="event">
+                        <h3>이벤트</h3>
+                        <img src="images/img_banner.jpg" alt="">
+                        <a href="" class="btn_more">자세히 보기</a>
+                    </article>
+                    <article class="recom">
+                        <h3>시니어 추천 금융상품</h3>
+                        <div class="swiper-container slide2">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card_info">
+                                    <div class="card">
+                                        <img src="images/card.png" alt="">
+                                        <div>
+                                            <button>관심추가</button>
+                                            <button>신청하기</button> 
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>우리국민연금증카드</h4>
+                                        <p>
+                                            국민연금수급자임을 증명하는 신분증 기능에 버스요금 매월 5천원 지원과 차별화
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="control">
+                                <button class="prev"><span class="hide">이전</span></button>
+                                <button class="next"><span class="hide">다음</span></button>     
+                            </div>  
+                        </div>
+                        <a href="" class="btn_more">자세히 보기</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div style="height: 500px;"></div>
+    </main>
 </body>
 </html>
