@@ -1,129 +1,3 @@
-/* 메뉴 */
-header .top {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 0 26px;
-}
-header .top h1 {
-  float: left;
-  padding: 33px 0 0;
-}
-header .top h1 a:first-child {
-  margin-right: 28px;
-}
-header .top > div {
-  float: right;
-}
-header .control {
-  float: left;
-  padding: 31px 24px 0 0;
-}
-header .control h2 {
-  float: left;
-  font-size: 16px;
-  color: #333;
-  font-weight: normal;
-  line-height: 36px;
-}
-header .control ul {
-  float: left;
-  padding: 0 0 0 9px;
-}
-header .control li {
-  float: left;
-  padding: 0 0 0 4px;
-}
-header .control li button[class] {
-  padding: 0;
-}
-header .control li button {
-  font-size: 14px;
-  color: #288bcc;
-  background: #fff;
-  border: 1px solid #e4e4e4;
-  padding: 0 16px;
-  /* min-width를 높이와 같게 준다 */
-  min-width: 36px;
-  height: 36px;
-  border-radius: 36px;
-  box-sizing: border-box;
-}
-header .sns {
-  float: left;
-  position: relative;
-  padding: 27px 0 0 7px;
-}
-/* sns전 구분선 만들기 */
-header .sns:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 35px;
-  width: 1px;
-  height: 30px;
-  background: #e3e3e3;
-}
-header .sns li {
-  float: left;
-  padding: 0 0 0 12px;
-}
-header .sns li img {
-  width: 46px;
-}
-header .btm {
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
-header .btm > div {
-  margin: 0 auto;
-  width: 1200px;
-}
-header .btm .lnb {
-  float: left;
-}
-header .btm .lnb li {
-  float: left;
-}
-/* 만약 .lnb의 li로 하게되면 선택의 폭이 줄어들게 됨 */
-header .btm .lnb a {
-  display: block;
-  line-height: 59px;
-  padding: 0 40px;
-  font-size: 22px;
-  color: #333;
-}
-header .btm .spot {
-  float: right;
-  font-size: 0;
-}
-header .btm .spot * {
-  vertical-align: middle;
-}
-header .btm .spot a {
-  display: inline-block;
-  position: relative;
-  padding: 0 25px;
-  line-height: 59px;
-  font-size: 15px;
-  color: #666;
-}
-header .btm .spot a ~ a:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 1px;
-  height: 10px;
-  background: #e3e3e3;
-  transform: translateY(-50%);
-}
-header .btm .spot button {
-  width: 59px;
-  height: 59px;
-  background: none;
-  font-size: 25px;
-  color: #0066b3;
-}
 /* 슬라이드 */
 .visual img {
   width: 100%;
@@ -455,6 +329,9 @@ header .btm .spot button {
   color: #288bd6;
   padding: 0 0 0 30px;
 }
+.education {
+  padding: 0 0 104px;
+}
 .education .edu_warp {
   display: flex;
   justify-content: space-between;
@@ -495,14 +372,18 @@ header .btm .spot button {
   border-radius: 6px;
   font-size: 17px;
 }
-.education h3 {
+.h3 {
   font-size: 23px;
   color: #333;
   padding: 0 0 28px;
   line-height: 1;
 }
-.education h3 span {
+.h3 span {
   color: #288bcc;
+}
+.h3 em {
+  color: #8a76b4;
+  font-weight: bold;
 }
 .education .right {
   width: 580px;
@@ -511,7 +392,7 @@ header .btm .spot button {
   position: relative;
 }
 .education .right > div ~ div {
-  margin: 55px 0 0;
+  margin: 53px 0 0;
 }
 .education .info_wrap {
   display: flex;
@@ -556,6 +437,213 @@ header .btm .spot button {
 .education .info_wrap .info p {
   font-size: 17px;
   color: #666;
+}
+.trip {
+  background: linear-gradient(to bottom, #5698cc, #eceff4);
+  padding: 0 0 100px;
+}
+.trip .tit h2 {
+  color: #fff;
+}
+.trip .tit p {
+  color: #fff;
+}
+.trip .trip_list {
+  display: flex;
+  justify-content: space-between;
+}
+.trip .trip_list li {
+  position: relative;
+  width: 384px;
+  height: 439px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.trip .trip_list li .thoumb {
+  width: 100%;
+  height: 212px;
+  border-radius: 5px 5px 0 0;
+}
+.trip .trip_list li .mark {
+  position: absolute;
+  right: -10px;
+  top: -24px;
+}
+.trip .trip_list li strong {
+  display: block;
+  padding: 37px 0 15px;
+  font-size: 24px;
+  color: #333;
+  line-height: 1;
+}
+.trip .trip_list li p {
+  font-size: 17px;
+  color: #666;
+  line-height: 28px;
+  padding: 0 0 20px;
+}
+.trip .trip_list li a {
+  display: inline-block;
+  width: 148px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.trip .trip_list li.color1 strong span {
+  color: #ed2626; /*위메프 색상*/
+}
+.trip .trip_list li.color1 a {
+  background: #ed2626;
+}
+.trip .trip_list li.color2 strong span {
+  color: #122e80; /* 롯데관광색상 */
+}
+.trip .trip_list li.color2 a {
+  background: #122e80;
+}
+.trip .trip_list li.color3 strong span {
+  color: #288bcc; /* 국내여행색상*/
+}
+.trip .trip_list li.color3 a {
+  background: #288bcc;
+}
+/* 일자리 정보 */
+.job .job_info {
+  display: flex;
+}
+.job .job_info li {
+  border-top: 2px solid #288bcc;
+  width: 285px;
+  padding: 0 30px;
+  margin: 0 22px 0 0;
+  box-sizing: border-box;
+}
+.job .job_info li img {
+  display: block;
+  margin: 30px auto;
+}
+.job .job_info li strong {
+  font-size: 20px;
+  color: #333;
+  line-height: 1;
+}
+.job .job_info li p {
+  overflow: hidden;
+  position: relative;
+  width: 205px;
+  font-size: 18px;
+  color: #666;
+  padding: 19px 0 47px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.job .job_info li p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 26px;
+  width: 36px;
+  height: 1px;
+  background: #288bcc;
+}
+.job .job_info li span {
+  font-size: 12px;
+  color: #55b9fe;
+}
+.job .left {
+  float: left;
+  position: relative;
+}
+.job .left .btn_more {
+  right: 21px;
+}
+.job .right {
+  padding: 50px 0 0;
+  margin: 0 0 100px;
+  float: right;
+}
+.job .right img {
+  width: 240px;
+  border: 1px solid #e4e4e4;
+}
+.customer {
+  border: 1px solid #aec6f1;
+  clear: both;
+  padding: 40px;
+}
+.customer .h3 {
+  float: left;
+}
+.customer .txt {
+  float: left;
+  padding: 0 0 0 14px;
+  font-size: 15px;
+  color: #666;
+}
+.customer .form {
+  clear: both;
+  display: flex;
+  padding: 0 0 27px;
+  font-size: 0;
+  justify-content: space-between;
+}
+.customer .form input,
+.customer .form select {
+  font-size: 15px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fafafa;
+}
+.customer .form label {
+  padding: 0 14px 0 0;
+  font-size: 15px;
+  color: #333;
+}
+.customer .form input {
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+}
+.customer .form input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #a9a9a9;
+}
+.customer .form button {
+  margin: 0 0 0 5px;
+  width: 130px;
+  height: 50px;
+  border-radius: 5px;
+  background: #288bcc;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.customer .form span {
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.customer input[type="checkbox"] + label {
+  display: inline-block;
+  padding: 0 20px 0 29px;
+  line-height: 25px;
+  background: url(../images/chk.jpg) no-repeat left;
+  font-size: 16px;
+  color: #333;
+}
+.customer input[type="checkbox"]:checked + label {
+  background-image: url(../images/chk2.jpg);
+}
+.customer label + a {
+  font-size: 14px;
+  color: #8b8b8b;
+  text-decoration: underline;
+  vertical-align: -2px;
 }
 .btn_more {
   position: absolute;

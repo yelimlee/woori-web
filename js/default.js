@@ -20,4 +20,13 @@ document.addEventListener("DOMContentLoaded", function(){
             prevEl: '.slide2 .prev',
         }
     });
+
+    var swiper3 = new Swiper(".slide3", {
+      slidesPerView: 6,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      }
+    });
 });
