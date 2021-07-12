@@ -43,11 +43,6 @@
 }
 /* 콘텐츠 공통디자인 */
 /* block : 금융서비스 공통부분 */
-.block > div {
-  margin: 0 auto;
-  padding: 100px 0 0;
-  width: 1200px;
-}
 .block .tit {
   text-align: center;
 }
@@ -627,17 +622,6 @@
   font-size: 15px;
   line-height: 50px;
   vertical-align: middle;
-}
-.customer input[type="checkbox"] + label {
-  display: inline-block;
-  padding: 0 20px 0 29px;
-  line-height: 25px;
-  background: url(../images/chk.jpg) no-repeat left;
-  font-size: 16px;
-  color: #333;
-}
-.customer input[type="checkbox"]:checked + label {
-  background-image: url(../images/chk2.jpg);
 }
 .customer label + a {
   font-size: 14px;
