@@ -13,13 +13,20 @@
   border: 1px solid #bdbdbd;
 }
 .join_wrap .step li {
+  position: relative;
   width: 100px;
   padding: 119px 0 0;
   color: 12px;
-  color: #666;
-  font-weight: bold;
   text-align: center;
-  background: url(../images/bg_tab01.png) no-repeat center top;
+  background: url(../images/bg_tab01_off.png) no-repeat center top;
+  color: #d8d0d0;
+}
+.join_wrap .step li ~ li:before {
+  content: url(../images/sBtn_next3.png);
+  position: absolute;
+  left: -116px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .join_wrap .step li:nth-child(2) {
   background: url(../images/bg_tab02.jpg) no-repeat center top;
@@ -27,10 +34,23 @@
 .join_wrap .step li:nth-child(3) {
   background: url(../images/bg_tab03.png) no-repeat center top;
 }
+.join_wrap .step li.active {
+  color: #666;
+  font-weight: bold;
+}
+.join_wrap .step li.active:nth-child(1) {
+  background: url(../images/bg_tab01.png) no-repeat center top;
+}
+.join_wrap .step li.active:nth-child(2) {
+  background: url(../images/bg_tab02_on.png) no-repeat center top;
+}
 .join_wrap .step div {
   font-size: 18px;
-  color: #288bcc;
+  color: #999
   font-weight: normal;
+}
+.join_wrap .step li.active div {
+  color: #288bcc;
 }
 .join_wrap .agree {
   padding: 25px 30px;
